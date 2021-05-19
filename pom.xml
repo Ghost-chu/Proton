@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>me.drepic</groupId>
+    <!-- Change the groupId because I want deploy it to CodeMC.io Nexus without conflict(for original repo) -->
+    <groupId>studio.potatocraft</groupId>
     <artifactId>Proton</artifactId>
     <version>1.3.0</version>
     <build>
@@ -60,6 +60,17 @@
             <url>https://repo.codemc.org/repository/maven-public</url>
         </repository>
     </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>codemc-releases</id>
+            <url>https://repo.codemc.io/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>codemc-snapshots</id>
+            <url>https://repo.codemc.io/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
