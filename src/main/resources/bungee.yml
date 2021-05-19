@@ -1,4 +1,4 @@
 name: Proton
 author: Drepic
 version: ${version}
-main: me.drepic.proton.bungee.BungeeBootstrap
+main: me.drepic.proton.bungee.JavaBootstrap
