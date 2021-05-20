@@ -21,7 +21,7 @@ public class JavaConfigAdapter implements ConfigAdapter {
         if (!configFile.exists()) { //Simply save default config into datafolder
             try {
                 configFile.createNewFile();
-                try (InputStream is = getClass().getClassLoader().getResourceAsStream("config.yml");
+                try (InputStream is = getClass().getClassLoader().getResourceAsStream("proton.yml");
                      OutputStream os = new FileOutputStream(configFile)) {
                     ByteStreams.copy(is, os);
                 }
