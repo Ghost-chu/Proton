@@ -17,7 +17,7 @@ public class JavaConfigAdapter implements ConfigAdapter {
 
     @Override
     public void saveDefault() {
-        File configFile = new File( "config.yml");
+        File configFile = new File( "proton.yml");
         if (!configFile.exists()) { //Simply save default config into datafolder
             try {
                 configFile.createNewFile();
@@ -33,7 +33,7 @@ public class JavaConfigAdapter implements ConfigAdapter {
 
     @Override
     public void loadConfig() {
-        File configFile = new File("config.yml");
+        File configFile = new File("proton.yml");
         if (!configFile.exists()) {
             throw new RuntimeException("No config file exists");
         }

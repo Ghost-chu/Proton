@@ -6,7 +6,7 @@
     <!-- Change the groupId because I want deploy it to CodeMC.io Nexus without conflict(for original repo) -->
     <groupId>studio.potatocraft</groupId>
     <artifactId>Proton</artifactId>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <build>
         <plugins>
             <plugin>
